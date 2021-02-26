@@ -1,0 +1,21 @@
+This work is licensed under the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-nd/4.0/.
+
+Title: Concurrency Project
+
+Author: Peter Lucan, 4th Year Software Development student at IT Carlow 
+Student Number: C00228946
+Date: 24/02/2021
+Email: c00228946@itcarlow.ie
+
+Description: Concurrency Project. A parrallel Program which find and prints the twin prime numbers from 0 to a given number and also calculates the amount of prime numbers up to the given number. The user is first asked to input the number and then to input how many tasks they would like to execute the program with. This Program uses tasks. The functions used in this poject are in the utility.h header file and the rest is in the main.cpp file.
+
+Dependencies:
+gcc v 7.5.0 or greater
+-pthread
+Make
+
+Install:
+run "make" in directory with code.
+
+Usage:
+type "./main" to run

@@ -1,0 +1,120 @@
+\hypertarget{utility_8h}{}\doxysection{utility.\+h File Reference}
+\label{utility_8h}\index{utility.h@{utility.h}}
+{\ttfamily \#include $<$cmath$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$numeric$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$bits/stdc++.\+h$>$}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{utility_8h_ad97f44f50f9c665d1ab921528ce5cec7}{find\+Prime\+Pairs}} (uint64\+\_\+t n)
+\item 
+bool \mbox{\hyperlink{utility_8h_a4f11d0e1329bb7b24e8d9267290d477f}{check\+Prime}} (uint64\+\_\+t n)
+\item 
+uint64\+\_\+t \mbox{\hyperlink{utility_8h_ab1e9ec277e703a7f84a81ba487edae3f}{count\+Primes}} (uint64\+\_\+t start, uint64\+\_\+t end)
+\item 
+bool \mbox{\hyperlink{utility_8h_a076f49b8fe95a6bf0ee89a3a93fcc768}{check\+Prime\+Sequential}} (uint64\+\_\+t n)
+\item 
+void \mbox{\hyperlink{utility_8h_a21ebe3b06f9a5ee3e870a30341f8c236}{count\+Primes\+Sequential}} (uint64\+\_\+t n)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{utility_8h_a4f11d0e1329bb7b24e8d9267290d477f}\label{utility_8h_a4f11d0e1329bb7b24e8d9267290d477f}} 
+\index{utility.h@{utility.h}!checkPrime@{checkPrime}}
+\index{checkPrime@{checkPrime}!utility.h@{utility.h}}
+\doxysubsubsection{\texorpdfstring{checkPrime()}{checkPrime()}}
+{\footnotesize\ttfamily bool check\+Prime (\begin{DoxyParamCaption}\item[{uint64\+\_\+t}]{n }\end{DoxyParamCaption})}
+
+checks for Prime Numbers up to n The check\+Prime function
+
+The number inputted by the user is supplied as a parameter to this function. Then the numbers are checked up to n and true is returned for the ones that are prime.
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & Then number inputted by the user. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 71 of file utility.\+h.
+
+\mbox{\Hypertarget{utility_8h_a076f49b8fe95a6bf0ee89a3a93fcc768}\label{utility_8h_a076f49b8fe95a6bf0ee89a3a93fcc768}} 
+\index{utility.h@{utility.h}!checkPrimeSequential@{checkPrimeSequential}}
+\index{checkPrimeSequential@{checkPrimeSequential}!utility.h@{utility.h}}
+\doxysubsubsection{\texorpdfstring{checkPrimeSequential()}{checkPrimeSequential()}}
+{\footnotesize\ttfamily bool check\+Prime\+Sequential (\begin{DoxyParamCaption}\item[{uint64\+\_\+t}]{n }\end{DoxyParamCaption})}
+
+checks for Prime Numbers up to n The checkcheck\+Prime\+Sequential\+Prime function
+
+The number inputted by the user is supplied as a parameter to this function. Then the numbers are checked up to n and true is returned for the ones that are prime.
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & Then number inputted by the user. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 153 of file utility.\+h.
+
+\mbox{\Hypertarget{utility_8h_ab1e9ec277e703a7f84a81ba487edae3f}\label{utility_8h_ab1e9ec277e703a7f84a81ba487edae3f}} 
+\index{utility.h@{utility.h}!countPrimes@{countPrimes}}
+\index{countPrimes@{countPrimes}!utility.h@{utility.h}}
+\doxysubsubsection{\texorpdfstring{countPrimes()}{countPrimes()}}
+{\footnotesize\ttfamily uint64\+\_\+t count\+Primes (\begin{DoxyParamCaption}\item[{uint64\+\_\+t}]{start,  }\item[{uint64\+\_\+t}]{end }\end{DoxyParamCaption})}
+
+Counts the prime numbers from start to end The count\+Primes function
+
+This function is run in parallel as each tasks specifies where calculation should start and finish counting the prime numbers of a given input. This splits having to count the primes of a large number into tasks where each task checks and counts a part of the large input number.
+
+
+\begin{DoxyParams}{Parameters}
+{\em start} & Specifies where calculation of Prime Numbers should Begin. \\
+\hline
+{\em end} & Specifies where calculation of Prime Numbers should End. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 122 of file utility.\+h.
+
+\mbox{\Hypertarget{utility_8h_a21ebe3b06f9a5ee3e870a30341f8c236}\label{utility_8h_a21ebe3b06f9a5ee3e870a30341f8c236}} 
+\index{utility.h@{utility.h}!countPrimesSequential@{countPrimesSequential}}
+\index{countPrimesSequential@{countPrimesSequential}!utility.h@{utility.h}}
+\doxysubsubsection{\texorpdfstring{countPrimesSequential()}{countPrimesSequential()}}
+{\footnotesize\ttfamily void count\+Primes\+Sequential (\begin{DoxyParamCaption}\item[{uint64\+\_\+t}]{n }\end{DoxyParamCaption})}
+
+Counts the prime numbers up to n The check\+Prime\+Sequential function.
+
+This function Counts the prime numbers up to n and prints the total.
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & Then number inputted by the user \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 181 of file utility.\+h.
+
+\mbox{\Hypertarget{utility_8h_ad97f44f50f9c665d1ab921528ce5cec7}\label{utility_8h_ad97f44f50f9c665d1ab921528ce5cec7}} 
+\index{utility.h@{utility.h}!findPrimePairs@{findPrimePairs}}
+\index{findPrimePairs@{findPrimePairs}!utility.h@{utility.h}}
+\doxysubsubsection{\texorpdfstring{findPrimePairs()}{findPrimePairs()}}
+{\footnotesize\ttfamily void find\+Prime\+Pairs (\begin{DoxyParamCaption}\item[{uint64\+\_\+t}]{n }\end{DoxyParamCaption})}
+
+displays the Twin Prime Pairs up to n The find\+Prime\+Pairs function
+
+The number inputted by the user is supplied as a parameter to this function. Then the Twin Prime Pairs are found and printed.
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & Then number inputted by the user. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 32 of file utility.\+h.
+
